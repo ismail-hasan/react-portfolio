@@ -1,6 +1,6 @@
 import React from 'react';
-import profilePic from '../assets/homeImg.jpeg'; // Replace with your image path
-import Title from './Title';
+import profilePic from '../assets/homeImg.jpeg';
+import { FaDownload } from 'react-icons/fa';
 
 
 
@@ -12,8 +12,9 @@ const Home = () => {
         >
             {/* Left Side (Text Content) */}
             <div className="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left space-y-6 ml-15">
+                <p className="text-2xl italic -mb-0">Hello</p>
                 <h1 className="text-5xl md:text-6xl font-bold">
-                    Hello, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">Ismail Hasan</span>,
+                    I'm Ismail Hasan
                     <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">Frontend Developer</span>
                 </h1>
@@ -25,8 +26,11 @@ const Home = () => {
                 <a
                     href="/path-to-your-cv.pdf" // Replace with the actual path to your CV file
                     download
-                    className="inline-block mt-4 px-6 py-3 text-white text-lg font-medium rounded-full bg-gradient-to-r from-purple-500 to-blue-500 shadow-lg shadow-blue-500/50 transition-transform transform hover:scale-105"
+                    className="inline-flex items-center gap-2 mt-4 px-6 py-3 text-white text-lg font-medium rounded-full 
+               bg-gradient-to-r from-purple-500 to-blue-500 shadow-lg shadow-blue-500/50 
+               transition-transform transform hover:scale-110 hover:shadow-purple-500/50"
                 >
+                    <FaDownload className="text-xl animate-bounce" />
                     Download CV
                 </a>
             </div>

@@ -16,8 +16,8 @@ const ProjectLayout = () => {
     console.log(location)
     const navItems = [
         { id: 'about', label: 'ABOUT', path: '/' },
+        { id: 'projects', label: 'PROJECTS', path: '/project' },
         { id: 'experience', label: 'EXPERIENCE', path: '/experience' },
-        { id: 'projects', label: 'PROJECTS', path: '/project' }
     ];
 
     return (

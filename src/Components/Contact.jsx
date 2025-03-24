@@ -24,10 +24,11 @@ const Contact = () => {
                 </p>
 
                 {/* Hire Me Button */}
-                <button className="flex items-center justify-center bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold py-3 px-6 rounded-lg transform transition duration-300 ease-in-out hover:scale-110 hover:from-blue-500 hover:to-purple-500 hover:text-yellow-200 mx-auto">
-                    <FaUserTie className="mr-2 text-xl" />
+                <button className="flex items-center justify-center bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold py-3 px-6 rounded-lg transform transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg shadow-blue-500/50 mx-auto">
+                    <FaUserTie className="mr-2 text-xl animate-bounce" />
                     <span>Hire Me</span>
                 </button>
+
             </div>
         </div>
     );
