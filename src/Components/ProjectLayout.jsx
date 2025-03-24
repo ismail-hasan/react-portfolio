@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router'; // Import useNavigate
 import AboutMeSection from './About';
+import Title from './Title';
 
 const ProjectLayout = () => {
     const navigate = useNavigate(); // Initialize the navigate function
@@ -24,7 +25,7 @@ const ProjectLayout = () => {
             <div className="max-w-7xl flex flex-col items-center md:flex-row gap-12 p-6">
                 {/* Left Sidebar */}
                 <div className="w-full md:w-1/3 text-center md:text-left">
-                    <h1 className="text-5xl font-bold mb-4">Brittany Chiang</h1>
+                    <h1 className="text-5xl font-bold mb-4"> <Title></Title> </h1>
                     <h2 className="text-2xl mb-4 text-gray-400">Front End Engineer</h2>
                     <p className="text-lg mb-6 text-gray-300">
                         I build accessible, pixel-perfect digital experiences for the web.
