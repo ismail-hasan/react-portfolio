@@ -24,14 +24,14 @@ const AboutMeSection = () => {
                         <code>
                             {`const AboutMe = () => {
     return {
-        Name: "Md Kawsar Islam Yeasin",
+        Name: "Md Ismail Hossain",
         Role: "Front End Web Developer",
-        Age: 21,
+        Age: 22,
         Gender: "Male",
-        Address: "Dhaka, Cantonment, Dhaka-1206",
-        Phone: "01632227965",
-        Email: "mdkawsarislam@gmail.com",
-        Language: ["Bangla", "English", "Hindi-spoken"],
+        Address: "Paban Sadar, Pabna",
+        Phone: "01776458113",
+        Email: "fnismailhasan@gmail.com",
+        Language: ["Bangla", "English", "Hindi-spoken","Korean"],
     };
 };
 

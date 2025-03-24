@@ -49,7 +49,7 @@ const Choice = () => {
                         {/* Left Side - Text Content */}
                         <div className="flex flex-col justify-center space-y-6">
                             <div className="inline-block">
-                                <button className="text-sm font-medium py-1 px-4 rounded-full bg-gray-800/60 text-gray-300 border border-gray-700/50 backdrop-blur-sm">
+                                <button className="text-sm font-medium py-1 px-4 rounded-full bg-pink-600  text-gray-300 border border-gray-700/50 backdrop-blur-sm">
                                     WHY CHOOSE US
                                 </button>
                             </div>

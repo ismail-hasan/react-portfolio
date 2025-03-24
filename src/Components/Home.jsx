@@ -17,7 +17,7 @@ const Home = () => {
                     <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">Frontend Developer</span>
                 </h1>
-                
+
                 <p className="text-lg text-gray-300">
                     I'm a UI/UX and Frontend Developer passionate about crafting user-friendly and visually appealing web experiences.
                     This portfolio showcases my skills and projects.

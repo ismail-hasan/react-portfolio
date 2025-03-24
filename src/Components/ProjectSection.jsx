@@ -31,7 +31,7 @@ const ProjectSection = () => {
                         <div className="flex gap-2 mb-4">
                             <span className="px-3 py-1 bg-blue-600 rounded-full text-white text-sm">TypeScript</span>
                             <span className="px-3 py-1 bg-cyan-600 rounded-full text-white text-sm">Next.js</span>
-                            <span className="px-3 py-1 bg-purple-600 rounded-full text-white text-sm">SCSS</span>
+                            <span className="px-3 py-1 bg-pink-600 rounded-full text-white text-sm">SCSS</span>
                         </div>
                         <p className="text-white text-lg mb-6">{project.description}</p>
                         <div className="flex gap-4">
