@@ -35,7 +35,7 @@ const Home = () => {
             <div className="w-full md:w-1/2 flex items-center justify-center mt-10 md:mt-0">
                 <div className="relative flex items-center justify-center rounded-full p-1 bg-gradient-to-r from-purple-500 to-blue-500">
                     <div className="absolute inset-0 rounded-full blur-xl bg-gradient-to-r from-purple-500 to-blue-500 animate-pulse"></div>
-                    <div className="relative rounded-full overflow-hidden w-72 h-72 md:w-80 md:h-80 border-[6px] border-[#0d0d0d]">
+                    <div className="relative rounded-full overflow-hidden w-72 h-72 md:w-80 md:h-80 border-[6px] ">
                         <img
                             src={profilePic}
                             alt="Profile"

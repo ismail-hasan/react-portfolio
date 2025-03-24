@@ -13,7 +13,7 @@ const Skills = () => {
 
     return (
         <section className="bg-gray-800 py-10">
-            <div className="container mx-auto text-center">
+            <div className="w-6xl mx-auto text-center">
                 <h2 className="text-4xl text-white font-semibold mb-6">Skills()</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3">
                    
