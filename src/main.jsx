@@ -4,12 +4,25 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import Layout from './Components/Layout.jsx'
+import ProjectLayout from './Components/ProjectLayout.jsx'
+import About from './Components/About.jsx'
+import ProjectSection from './Components/ProjectSection.jsx'
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout></Layout>
+    element: <Layout></Layout>,
+    children: [
+      {
+        path: "about",
+        element: <About></About>
+      },
+      {
+        path: "project",
+        element: <ProjectSection></ProjectSection>
+      }
+    ]
   }
 ])
 

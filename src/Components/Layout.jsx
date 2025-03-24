@@ -6,6 +6,8 @@ import Contact from './Contact';
 import ContactForm from './ContactForm';
 import Choice from './Choice';
 import Project from './Project';
+import ProjectLayout from './ProjectLayout';
+import { NavLink, Outlet } from 'react-router';
 
 const Layout = () => {
     return (
@@ -13,6 +15,7 @@ const Layout = () => {
             <Home></Home>
             <Skills></Skills>
             <Project></Project>
+            <ProjectLayout></ProjectLayout>
             <Choice></Choice>
             <Contact></Contact>
             <ContactForm></ContactForm>
