@@ -2,22 +2,6 @@ import React from 'react';
 import profilePic from '../assets/homeImg.jpeg'; // Replace with your image path
 
 
-// // TODO 
-
-
-// About – Share your background, skills, experience, and what makes you unique. Personalize it to connect with visitors.
-
-// Portfolio/Work – Display your projects with descriptions, images, and case studies. Include details like your role, tools used, and outcomes.
-
-
-// Testimonials – Showcase client feedback or endorsements to build credibility.
-
-
-// Call to Action (CTA) – Encourage visitors to contact you or view your work, placed strategically throughout the site.
-
-
-
-
 
 const Home = () => {
     return (

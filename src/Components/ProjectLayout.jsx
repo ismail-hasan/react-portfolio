@@ -1,7 +1,24 @@
-import React from 'react';
-import { NavLink, Outlet } from 'react-router';
+import React, { useState } from 'react';
+import { NavLink, Outlet, useLocation, useNavigate } from 'react-router'; // Import useNavigate
+import AboutMeSection from './About';
 
 const ProjectLayout = () => {
+    const navigate = useNavigate(); // Initialize the navigate function
+
+    const handleNavigation = (path) => {
+        console.log(`Navigating to: ${path}`);
+        navigate(path); // Use navigate to route programmatically
+    };
+
+    const [activeItem, setActiveItem] = useState('about');
+    const location = useLocation()
+    console.log(location)
+    const navItems = [
+        { id: 'about', label: 'ABOUT', path: '/' },
+        { id: 'experience', label: 'EXPERIENCE', path: '/experience' },
+        { id: 'projects', label: 'PROJECTS', path: '/project' }
+    ];
+
     return (
         <div className="bg-gray-900 text-white flex justify-center">
             <div className="max-w-7xl flex flex-col items-center md:flex-row gap-12 p-6">
@@ -13,47 +30,54 @@ const ProjectLayout = () => {
                         I build accessible, pixel-perfect digital experiences for the web.
                     </p>
 
-                    <ul className="space-y-4">
-                        <li>
-                            <NavLink
-                                to="/about"
-                                className={({ isActive }) =>
-                                    `text-lg ${isActive ? 'text-blue-500' : 'text-blue-400'
-                                    }  transition duration-300`
-                                }
+                    {/* // ul start  */}
+                    <ul className="flex flex-col space-y-10">
+                        {navItems.map((item) => (
+                            <li
+                                key={item.id}
+                                className="flex items-center cursor-pointer group"
+                                onMouseEnter={() => setActiveItem(item.id)}
+                                onClick={() => {
+                                    setActiveItem(item.id);
+                                    handleNavigation(item.path); // Navigate when clicked
+                                }}
                             >
-                                About Us
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                to="/experience"
-                                className={({ isActive }) =>
-                                    `text-lg ${isActive ? 'text-blue-500' : 'text-blue-400'
-                                    }  transition duration-300`
-                                }
-                            >
-                                experience
-                            </NavLink>
-                        </li>
-                   
-                        <li>
-                            <NavLink
-                                to="/project"
-                                className={({ isActive }) =>
-                                    `text-lg ${isActive ? 'text-blue-500' : 'text-blue-400'
-                                    } hover:text-blue-500 transition duration-300`
-                                }
-                            >
-                                Projects
-                            </NavLink>
-                        </li>
+                                <div className="w-28 relative flex items-center">
+                                    <div className="w-full h-px bg-gray-700"></div>
+                                    <div
+                                        className={`absolute top-0 left-0 h-px bg-white transition-all duration-300 ease-out ${activeItem === item.id ? 'w-full' : 'w-0 group-hover:w-full'}`}
+                                    ></div>
+                                </div>
+
+                                <NavLink
+                                    to={item.path} // Use the "to" prop for NavLink
+                                    className={`ml-4 uppercase text-sm tracking-widest transition-colors duration-300 ${activeItem === item.id ? 'text-white font-medium' : 'text-gray-500 group-hover:text-white'}`}
+                                >
+                                    {item.label}
+                                </NavLink>
+                            </li>
+                        ))}
                     </ul>
+                    {/* // ul end */}
                 </div>
 
                 {/* Right Content Area (Outlet) */}
                 <div className="flex-1 p-6">
-                    <Outlet />
+                    {/* <AboutMeSection></AboutMeSection> */}
+
+
+                    {
+                        location.pathname === "/experience" || location.pathname === "/project" ?
+                            <>
+                                <Outlet />
+                            </>
+                            :
+                            <>
+                                <AboutMeSection></AboutMeSection>
+                            </>
+
+                    }
+
                 </div>
             </div>
         </div>
