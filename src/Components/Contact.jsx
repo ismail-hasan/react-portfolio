@@ -7,10 +7,14 @@ const Contact = () => {
         <div className="bg-gray-800 py-16 text-white">
             <div className="container mx-auto text-center px-4">
                 {/* Heading Section */}
-                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 flex justify-center items-center flex-col sm:flex-row">
-                    Have a <span className="mx-3"><Title text={"PROJECT"} /></span>
-                    <span className="mt-2 sm:mt-0 ml-2">in Mind?</span>
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 flex justify-center items-center flex-wrap sm:flex-nowrap whitespace-nowrap">
+                    <span>Have a</span>
+                    <span className="mx-3">
+                        <Title text={"PROJECT"} />
+                    </span>
+                    <span className="ml-2">in Mind?</span>
                 </h2>
+
 
                 {/* Subheading */}
                 <p className="text-xl sm:text-2xl mb-6">
