@@ -5,8 +5,7 @@ import { FaDownload } from 'react-icons/fa';
 const Home = () => {
     return (
         <section
-            id="home"
-            className="py-50 md:pb-0 md:py-0 h-screen flex flex-col-reverse md:flex-row items-center justify-center 
+            id="home"  className="py-10 md:py-0 md:h-screen flex flex-col-reverse md:flex-row items-center justify-center 
             bg-gradient-to-r from-gray-900 to-gray-800 px-6 sm:px-12 text-white"
         >
             {/* Left Side (Text Content) */}
