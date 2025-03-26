@@ -31,7 +31,7 @@ const AboutMeSection = () => {
         Address: "Paban Sadar, Pabna",
         Phone: "01776458113",
         Email: "fnismailhasan@gmail.com",
-        Language: ["Bangla", "English", "Hindi-spoken","Korean"],
+        Language: ["Bangla", "English", "Hindi-spoken","Kore"],
     };
 };
 

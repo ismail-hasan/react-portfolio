@@ -12,8 +12,9 @@ const ProjectLayout = () => {
     };
 
     const [activeItem, setActiveItem] = useState('about');
-    const location = useLocation()
-    console.log(location)
+    const location = useLocation();
+    console.log(location);
+
     const navItems = [
         { id: 'about', label: 'ABOUT', path: '/' },
         { id: 'projects', label: 'PROJECTS', path: '/project' },
@@ -25,13 +26,13 @@ const ProjectLayout = () => {
             <div className="max-w-7xl flex flex-col items-center md:flex-row gap-12 p-6">
                 {/* Left Sidebar */}
                 <div className="w-full md:w-1/3 text-center md:text-left">
-                    <h1 className="text-5xl font-bold mb-4"> <Title text={"ISMAIL HASAN"}></Title> </h1>
+                    <h1 className="text-5xl font-bold mb-4">ISMAIL HASAN </h1>
                     <h2 className="text-2xl mb-4 text-gray-400">Front End Engineer</h2>
                     <p className="text-lg mb-6 text-gray-300">
                         I build accessible, pixel-perfect digital experiences for the web.
                     </p>
 
-                    {/* // ul start  */}
+                    {/* // ul start */}
                     <ul className="flex flex-col space-y-10">
                         {navItems.map((item) => (
                             <li
@@ -64,21 +65,11 @@ const ProjectLayout = () => {
 
                 {/* Right Content Area (Outlet) */}
                 <div className="flex-1 p-6">
-                    {/* <AboutMeSection></AboutMeSection> */}
-
-
                     {
                         location.pathname === "/experience" || location.pathname === "/project" ?
-                            <>
-                                <Outlet />
-                            </>
-                            :
-                            <>
-                                <AboutMeSection></AboutMeSection>
-                            </>
-
+                            <Outlet /> :
+                            <AboutMeSection></AboutMeSection>
                     }
-
                 </div>
             </div>
         </div>
