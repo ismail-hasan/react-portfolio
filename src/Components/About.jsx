@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutMeSection = () => {
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-900 text-white px-4 sm:px-6 md:px-12">
+        <div className="flex items-center justify-center min-h-screen bg-gray-900 text-whit sm:px-6 md:px-12">
             <div className="relative max-w-4xl w-full bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl p-6 sm:p-8 md:p-10 overflow-hidden group">
 
                 {/* Animated Border */}
@@ -31,7 +31,7 @@ const AboutMeSection = () => {
         Address: "Paban Sadar, Pabna",
         Phone: "01776458113",
         Email: "fnismailhasan@gmail.com",
-        Language: ["Bangla", "English", "Hindi-spoken", "Korean"],
+        Language: ["Bangla", "English"],
     };
 };
 

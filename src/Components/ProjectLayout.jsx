@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router'; // Import useNavigate
 import AboutMeSection from './About';
-import Title from './Title';
 
 const ProjectLayout = () => {
     const navigate = useNavigate(); // Initialize the navigate function
@@ -13,7 +12,6 @@ const ProjectLayout = () => {
 
     const [activeItem, setActiveItem] = useState('about');
     const location = useLocation();
-    console.log(location);
 
     const navItems = [
         { id: 'about', label: 'ABOUT', path: '/' },
@@ -22,18 +20,18 @@ const ProjectLayout = () => {
     ];
 
     return (
-        <div className="bg-gray-900 text-white flex justify-center">
-            <div className="max-w-7xl flex flex-col items-center md:flex-row gap-12 p-6">
+        <div className="bg-gray-900 text-white">
+            <div className="md:flex flex-col items-center md:flex-row gap-12 ">
                 {/* Left Sidebar */}
-                <div className="w-full md:w-1/3 text-center md:text-left">
-                    <h1 className="text-5xl font-bold mb-4">ISMAIL Hasan</h1>
+                <div className="w-full md:w-1/3 mx-auto text-center md:text-left ml-0 md:ml-20">
+                    <h1 className="text-5xl font-bold mb-4 pt-15">ISMAIL Hasan</h1>
                     <h2 className="text-2xl mb-4 text-gray-400">Front End Engineer</h2>
                     <p className="text-lg mb-6 text-gray-300">
                         I build accessible, pixel-perfect digital experiences for the web.
                     </p>
 
                     {/* // ul start */}
-                    <ul className="flex flex-col space-y-10">
+                    <ul className="flex flex-col space-y-10 ml-15 md:ml-0">
                         {navItems.map((item) => (
                             <li
                                 key={item.id}
