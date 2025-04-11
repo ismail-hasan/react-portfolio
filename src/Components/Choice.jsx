@@ -54,7 +54,7 @@ const Choice = () => {
                                 </button>
                             </div>
 
-                            <h2 className="text-5xl font-bold text-gray-200 leading-tight">
+                            <h2 className="text-3xl md:text-5xl font-bold text-gray-200 leading-tight">
                                 We deliver high quality result
                             </h2>
 
