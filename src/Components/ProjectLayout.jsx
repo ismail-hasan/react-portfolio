@@ -20,7 +20,7 @@ const ProjectLayout = () => {
     ];
 
     return (
-        <div className="bg-gray-900 text-white">
+        <div className="bg-gray-900 text-white py-10">
             <div className="md:flex flex-col items-center md:flex-row gap-12 ">
                 {/* Left Sidebar */}
                 <div className="w-full md:w-1/3 mx-auto text-center md:text-left ml-0 md:ml-20">

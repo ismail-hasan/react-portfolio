@@ -2,8 +2,8 @@ import React from 'react';
 
 const AboutMeSection = () => {
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-900 text-whit sm:px-6 md:px-12">
-            <div className="relative max-w-4xl w-full bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl p-6 sm:p-8 md:p-10 overflow-hidden group">
+        <div className="flex md:items-center justify-center bg-gray-900 text-whit sm:px-6 md:px-12">
+            <div className="relative max-w-4xl w-full bg-white/10 backdrop-blur-lg rounded-xl shadow-2xl p-6 sm:p-8 md:p-6 overflow-hidden group">
 
                 {/* Animated Border */}
                 <div className="absolute -inset-0.5 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 
@@ -20,7 +20,7 @@ const AboutMeSection = () => {
 
                     {/* Code Block */}
                     <div className="overflow-x-auto">
-                        <pre className="bg-gray-900/70 rounded-lg p-4 sm:p-6 md:p-8 text-xs sm:text-sm md:text-base border border-white/20">
+                        <pre className="bg-gray-900/70 rounded-lg sm:p-6 p-4 md:p-2 text-xs sm:text-sm md:text-base border border-white/20 ">
                             <code>
                                 {`const AboutMe = () => {
     return {
