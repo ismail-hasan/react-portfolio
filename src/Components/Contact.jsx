@@ -28,10 +28,15 @@ const Contact = () => {
                 </p>
 
                 {/* Hire Me Button */}
-                <button className="flex items-center justify-center bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold py-3 px-6 rounded-lg transform transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg shadow-blue-500/50 mx-auto">
-                    <FaUserTie className="mr-2 text-xl animate-bounce" />
+                <a
+                    href="https://wa.me/8801776458113?text=Hi%2C%20I'm%20interested%20in%20working%20with%20you!"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold py-2 px-4 rounded-lg transform transition duration-300 ease-in-out hover:scale-110 hover:shadow-lg shadow-blue-500/50"
+                >
+                    <FaUserTie className="mr-2 text-lg animate-bounce" />
                     <span>Hire Me</span>
-                </button>
+                </a>
 
             </div>
         </div>
