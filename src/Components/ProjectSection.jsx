@@ -11,7 +11,7 @@ const ProjectSection = () => {
     ];
 
     return (
-        <div className="grid grid-cols-1 xl:grid-cols-2  gap-5 mt-12">
+        <div className="grid grid-cols-1 xl:grid-cols-2 p-5 md:p-0 gap-5 mt-12">
             {projects.map(project => (
                 <div
                     key={project.id}

@@ -62,7 +62,7 @@ const ProjectLayout = () => {
                 </div>
 
                 {/* Right Content Area (Outlet) */}
-                <div className="flex-1 p-6">
+                <div className="flex-1 p-3 md:p-6">
                     {
                         location.pathname === "/experience" || location.pathname === "/project" ?
                             <Outlet /> :
