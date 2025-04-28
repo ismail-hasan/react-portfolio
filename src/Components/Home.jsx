@@ -9,13 +9,13 @@ const Home = () => {
             bg-gradient-to-r from-gray-900 to-gray-800 px-6 sm:px-12 text-white"
         >
             {/* Left Side (Text Content) */}
-            <div className="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left space-y-6 md:ml-10">
+            <div className="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left space-y-1 md:ml-10">
                 <p className="text-xl sm:text-2xl italic">Hello</p>
                 <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
                     I'm Ismail Hasan
                     <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
-                        Frontend Developer
+                    <span className="text-3xl sm:text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+                        MERN Stack Developer
                     </span>
                 </h1>
 
