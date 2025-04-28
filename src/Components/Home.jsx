@@ -37,7 +37,7 @@ const Home = () => {
                     </p>
 
                     <a
-                        href="/path-to-your-cv.pdf"
+                        href="/Ismail-Hasan-Resume.pdf"
                         download
                         className="inline-flex items-center gap-2 px-5 py-3 sm:px-6 sm:py-3.5 text-white text-lg font-medium 
                     rounded-full bg-gradient-to-r from-purple-500 to-blue-500 shadow-lg shadow-blue-500/50 
