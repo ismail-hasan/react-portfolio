@@ -5,6 +5,7 @@ import react from "../assets/react-svgrepo-com.svg"
 import next from "../assets/next-js-svgrepo-com.svg"
 import js from "../assets/javascript-logo.svg"
 import node from "../assets/node-js.svg"
+import { Element } from 'react-scroll';
 const Skills = () => {
 
     const skills = [
@@ -55,49 +56,51 @@ const Skills = () => {
 
 
     return (
-        <section className="bg-gray-800 py-10 pb-10">
-            <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-4xl text-white font-semibold mb-6">Top Skills</h2>
+        <Element name="Skill">
+            <section className="bg-gray-800 py-10 pb-10">
+                <div className="max-w-6xl mx-auto text-center">
+                    <h2 className="text-4xl text-white font-semibold mb-6">Top Skills</h2>
 
-                {/* Responsive Grid: 1 column on mobile, 2 on small screens, 3 on medium+ screens */}
-                <div className="grid grid-cols-1  md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-6">
-                    {
+                    {/* Responsive Grid: 1 column on mobile, 2 on small screens, 3 on medium+ screens */}
+                    <div className="grid grid-cols-1  md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-6">
+                        {
 
-                        skills.map(singleSkil => <div className="max-w-md mx-auto xl:mb-0 bg-gray-900 p-8 rounded-lg text-white">
-                            <h2 className="text-2xl font-bold text-center mb-8">{singleSkil.title}</h2>
+                            skills.map(singleSkil => <div className="max-w-md mx-auto xl:mb-0 bg-gray-900 p-8 rounded-lg text-white">
+                                <h2 className="text-2xl font-bold text-center mb-8">{singleSkil.title}</h2>
 
-                            <div className="flex justify-around items-center mb-6">
-                                {/* HTML5 */}
-                                <div className="flex flex-col items-center">
-                                    <div className="w-20 h-24 mb-2">
-                                        {singleSkil.icon1}
+                                <div className="flex justify-around items-center mb-6">
+                                    {/* HTML5 */}
+                                    <div className="flex flex-col items-center">
+                                        <div className="w-20 h-24 mb-2">
+                                            {singleSkil.icon1}
+                                        </div>
+                                        <span className="text-lg font-medium">{singleSkil.name1}</span>
                                     </div>
-                                    <span className="text-lg font-medium">{singleSkil.name1}</span>
-                                </div>
 
-                                {/* CSS3 */}
-                                <div className="flex flex-col items-center">
-                                    <div className="w-20 h-24 mb-2">
-                                        {singleSkil.icon2}
+                                    {/* CSS3 */}
+                                    <div className="flex flex-col items-center">
+                                        <div className="w-20 h-24 mb-2">
+                                            {singleSkil.icon2}
+                                        </div>
+                                        <span className="text-lg font-medium">{singleSkil.name2}</span>
                                     </div>
-                                    <span className="text-lg font-medium">{singleSkil.name2}</span>
                                 </div>
-                            </div>
 
-                            {/* JavaScript */}
-                            <div className="flex flex-col items-center">
-                                <div className="w-16 h-16 mb-2  flex items-center justify-center">
-                                    {singleSkil.icon3}
+                                {/* JavaScript */}
+                                <div className="flex flex-col items-center">
+                                    <div className="w-16 h-16 mb-2  flex items-center justify-center">
+                                        {singleSkil.icon3}
+                                    </div>
+                                    <span className="text-lg font-medium">{singleSkil.name3}</span>
                                 </div>
-                                <span className="text-lg font-medium">{singleSkil.name3}</span>
-                            </div>
-                        </div>)
+                            </div>)
 
 
-                    }
+                        }
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </Element>
     );
 }
 

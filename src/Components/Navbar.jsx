@@ -1,13 +1,24 @@
-import { Link } from "react-router";
+// import { Link } from "react-router";
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const links = (
         <>
-            <li><Link to="/" className="hover:text-blue-400 transition text-[17px]">Home</Link></li>
-            <li><Link to="/" className="hover:text-blue-400 transition text-[17px]">Skill</Link></li>
-            <li><Link to="/" className="hover:text-blue-400 transition text-[17px]">About</Link></li>
-            <li><Link to="/" className="hover:text-blue-400 transition text-[17px]">Experience</Link></li>
-            <li><Link to="/" className="hover:text-blue-400 transition text-[17px]">Contact</Link></li>
+            <li>
+                <Link to="home" className="hover:text-blue-400 transition text-[17px]" smooth={true} duration={500}>Home</Link>
+                </li>
+            <li>
+                <Link  offset={-50} to="Skill" className="hover:text-blue-400 transition text-[17px]" smooth={true} duration={500}>Skill</Link>
+                </li>
+            <li>
+                <Link offset={-30} to="about" className="hover:text-blue-400 transition text-[17px]" smooth={true} duration={500}>About</Link>
+                </li>
+            <li>
+                <Link  offset={-30} to="services" className="hover:text-blue-400 transition text-[17px]" smooth={true} duration={500}>Services</Link>
+                </li>
+            <li>
+                <Link  offset={-40}  to="contact" className="hover:text-blue-400 transition text-[17px]" smooth={true} duration={500}>Contact</Link>
+                </li>
         </>
     );
 
