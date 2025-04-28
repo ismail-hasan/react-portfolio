@@ -4,7 +4,7 @@ const Navbar = () => {
     const links = (
         <>
             <li><Link to="/" className="hover:text-blue-400 transition text-[17px]">Home</Link></li>
-            <li><Link to="/" className="hover:text-blue-400 transition text-[17px]">Skills</Link></li>
+            <li><Link to="/" className="hover:text-blue-400 transition text-[17px]">Skill</Link></li>
             <li><Link to="/" className="hover:text-blue-400 transition text-[17px]">About</Link></li>
             <li><Link to="/" className="hover:text-blue-400 transition text-[17px]">Experience</Link></li>
             <li><Link to="/" className="hover:text-blue-400 transition text-[17px]">Contact</Link></li>

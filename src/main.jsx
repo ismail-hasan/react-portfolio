@@ -8,6 +8,7 @@ import ProjectLayout from './Components/ProjectLayout.jsx'
 import About from './Components/About.jsx'
 import ProjectSection from './Components/ProjectSection.jsx'
 import Experience from './Components/Experience.jsx'
+import ExperienceTwo from './Components/ExperienceTwo.jsx'
 
 
 const router = createBrowserRouter([
@@ -15,14 +16,18 @@ const router = createBrowserRouter([
     path: "/",
     element: <Layout></Layout>,
     children: [
-     
+
       {
         path: "project",
         element: <ProjectSection></ProjectSection>
       },
+      // {
+      //   path: "/experience",
+      //   element: <Experience></Experience>
+      // }
       {
         path: "/experience",
-        element: <Experience></Experience>
+        element: <ExperienceTwo></ExperienceTwo>
       }
     ]
   }

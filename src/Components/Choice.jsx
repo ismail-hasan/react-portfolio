@@ -1,6 +1,7 @@
 import React from 'react';
 import { Lightbulb, Timer, Award, Headphones } from "lucide-react";
 import { useState } from "react";
+import Socials from './Socials';
 
 const Choice = () => {
 
@@ -49,7 +50,7 @@ const Choice = () => {
                         {/* Left Side - Text Content */}
                         <div className="flex flex-col justify-center space-y-6">
                             <div className="inline-block">
-                                <button className="text-sm font-medium py-1 px-4 rounded-full bg-pink-600  text-gray-300 border border-gray-700/50 backdrop-blur-sm">
+                                <button className="text-sm font-medium py-1 px-4 rounded-full bg-blue-600  text-gray-300 border border-gray-700/50 backdrop-blur-sm">
                                     WHY CHOOSE US
                                 </button>
                             </div>
@@ -61,6 +62,7 @@ const Choice = () => {
                             <p className="text-gray-400 max-w-xl">
                                 Our dedicated team of experts combines cutting-edge technology with creative solutions to deliver exceptional results. We pride ourselves on attention to detail, innovative approaches, and commitment to excellence in every project.
                             </p>
+                            <Socials></Socials>
                         </div>
 
                         {/* Right Side - Service Cards Grid */}

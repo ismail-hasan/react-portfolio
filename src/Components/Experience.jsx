@@ -27,7 +27,7 @@ const ExperienceSection = () => {
           {experiences.map((experience, index) => (
             <div
               key={index}
-              className="bg-white/10 backdrop-blur-lg rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500"
+              className="bg-red-900 backdrop-blur-lg rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500"
             >
               <div className="flex justify-between items-center mb-6">
                 <div>

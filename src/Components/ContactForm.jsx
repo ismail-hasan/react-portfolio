@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { FaPhone } from 'react-icons/fa6';
+import Socials from './Socials';
 
 const ContactForm = () => {
 
@@ -8,17 +9,17 @@ const ContactForm = () => {
         {
             title: "Location",
             info: "Hazir Hat, Pabna Sadar, Pabna",
-            icon: <FaMapMarkerAlt className="text-3xl text-purple-500" />,
+            icon: <FaMapMarkerAlt className="text-3xl text-blue-500" />,
         },
         {
             title: "Email",
             info: "fnismailhasan@gmail.com",
-            icon: <FaEnvelope className="text-3xl text-purple-500" />,
+            icon: <FaEnvelope className="text-3xl text-blue-500" />,
         },
         {
             title: "Phone",
-            info: "+880 1776458113 | +880 1586153445 (WhatsApp)",
-            icon: <FaPhone className="text-3xl text-purple-500" />,
+            info: " +880 1586153445 | +880 1776458113 (WhatsApp)",
+            icon: <FaPhone className="text-3xl text-blue-500" />,
         },
     ];
 
@@ -29,28 +30,35 @@ const ContactForm = () => {
 
                     {/* Contact Info Section */}
                     <div className="md:w-1/2 w-full space-y-8">
-                        <h2 className="text-3xl font-bold mb-6 text-center md:text-left text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
+                        <h2 className="text-3xl font-bold mb-6 md:text-left ">
                             Get in Touch
                         </h2>
                         <p className="text-lg mb-6 text-gray-300">
                             Feel free to reach out! Whether you have a question or just want to drop a message,
                             I’ll do my best to get back to you.
                         </p>
+                        <Socials></Socials>
 
-                        <div className="space-y-6">
-                            {contactInfo.map((item, index) => (
-                                <div
-                                    key={index}
-                                    className="p-6 bg-white/10 backdrop-blur-lg border border-white/30 rounded-xl shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-1 flex items-center gap-6"
-                                >
-                                    <div>{item.icon}</div>
-                                    <div>
-                                        <h3 className="font-semibold text-lg text-white mb-1">{item.title}</h3>
-                                        <p className="text-gray-300">{item.info}</p>
+
+                        <div className="space-y-6 ">
+                            <div className='p-6 bg-white/10 backdrop-blur-lg border border-white/30 rounded-xl shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-1  items-center gap-6 grid'>
+
+                                {contactInfo.map((item, index) => (
+                                    <div
+                                        key={index}
+                                    >
+                                        <div className='flex gap-7'>
+                                            <div>{item.icon}</div>
+                                            <div>
+                                                <h3 className="font-semibold text-lg text-white mb-1">{item.title}</h3>
+                                                <p className="text-gray-300">{item.info}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
+
                     </div>
 
                     {/* Contact Form Section */}
@@ -87,7 +95,7 @@ const ContactForm = () => {
 
                             <button
                                 type="submit"
-                                className="cursor-pointer mt-6 w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold rounded-lg shadow-lg hover:from-blue-600 hover:to-purple-700 transition duration-300 transform hover:scale-105"
+                                className="cursor-pointer mt-6 w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-bold rounded-lg shadow-lg hover:from-blue-600 hover:to-blue-700 transition duration-300 transform hover:scale-105"
                             >
                                 Send Message
                             </button>

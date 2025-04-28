@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink, Outlet, useLocation, useNavigate } from 'react-router'; // Import useNavigate
+import { NavLink, Outlet, useLocation, useNavigate } from 'react-router';
 import AboutMeSection from './About';
 
 const ProjectLayout = () => {

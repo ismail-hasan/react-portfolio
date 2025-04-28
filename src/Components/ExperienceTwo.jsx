@@ -1,17 +1,33 @@
+
 import React, { useState } from 'react';
 
-const ProjectSection = () => {
+
+const ExperienceTwo = () => {
+
     const [hoveredId, setHoveredId] = useState(null);
 
     const projects = [
-        { id: 1, name: "Cosmic Coffee", description: "A weekend project using AI tools to create an otherworldly coffee experience. Where every cup takes you to another dimension." },
-        { id: 2, name: "Bike Bazar", description: "A platform for buying and selling bikes with advanced search filters and user-friendly design." },
-        { id: 3, name: "E-Commerce Store", description: "An online store for various products featuring a beautiful UI and smooth shopping experience." },
-        { id: 4, name: "E-Commerce Store", description: "An online store for various products featuring a beautiful UI and smooth shopping experience." }
+        {
+            id: 1,
+            company: 'Nister Accusation',
+            role: 'Jr. Web Developer',
+            duration: 'Jun 2022 - Dec 2022',
+            description:
+                'Developed and maintained front-end and back-end functionalities using React.js, Node.js, and Express. Collaborated with cross-functional teams to enhance user experiences.',
+            technologies: ['React', 'Node.js', 'Express', 'JavaScript'],
+        },
+        {
+            id: 2,
+            company: 'Luxtechco',
+            role: 'Frontend Developer (Remote)',
+            duration: 'Dec 2022 - Jun 2023',
+            description:
+                'Assisted in the development of responsive web applications and contributed to front-end designs using HTML, CSS, and JavaScript. Optimized UI/UX based on user feedback.',
+            technologies: ['Tailwind CSS', 'JavaScript', 'React', 'Node Js'],
+        },
     ];
-
     return (
-        <div className="grid grid-cols-1 xl:grid-cols-2 p-5 md:p-0 gap-5 mt-12">
+        <div className="grid grid-cols-1 p-5 md:p-0 gap-5 mt-12 md:mr-20">
             {projects.map(project => (
                 <div
                     key={project.id}
@@ -27,7 +43,13 @@ const ProjectSection = () => {
                 >
                     {/* Card content */}
                     <div className="relative z-20">
-                        <h2 className="text-3xl font-bold mb-4 text-white">{project.name}</h2>
+                        <div className="flex justify-between items-center mb-6">
+                            <div>
+                                <h3 className="text-3xl font-semibold">{project.company}</h3>
+                                <p className="text-lg text-gray-300">{project.role}</p>
+                            </div>
+                            <span className="text-sm text-gray-400">{project.duration}</span>
+                        </div>
                         <div className="flex gap-2 mb-4">
                             <span className="px-3 py-1 bg-blue-600 rounded-full text-white text-sm">TypeScript</span>
                             <span className="px-3 py-1 bg-cyan-600 rounded-full text-white text-sm">Next.js</span>
@@ -59,4 +81,4 @@ const ProjectSection = () => {
     );
 };
 
-export default ProjectSection;
+export default ExperienceTwo;

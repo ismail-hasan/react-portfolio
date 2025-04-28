@@ -9,8 +9,8 @@ const Contact = () => {
                 {/* Heading Section */}
                 <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 flex justify-center items-center flex-wrap sm:flex-nowrap whitespace-nowrap">
                     <span>Have a</span>
-                    <span className="mx-3">
-                        <Title text={"PROJECT"} />
+                    <span className="mx-3 text-blue-600">
+                    Project
                     </span>
                     <span className="ml-2">in Mind?</span>
                 </h2>
