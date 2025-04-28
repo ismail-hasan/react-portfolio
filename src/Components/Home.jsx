@@ -2,6 +2,7 @@ import React from 'react';
 import profilePic from '../assets/homeImg.jpeg';
 import { FaDownload } from 'react-icons/fa';
 import { Element } from 'react-scroll';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Home = () => {
     return (
@@ -11,15 +12,24 @@ const Home = () => {
             bg-gradient-to-r from-gray-900 to-gray-800 px-6 sm:px-12 text-white"
             >
                 {/* Left Side (Text Content) */}
-                <div className="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left space-y-1 md:ml-10">
+                <div className="w-full md:w-1/2 md:mt-20 text-center md:text-left space-y-1 md:ml-10">
                     <p className="text-xl sm:text-2xl italic">Hello</p>
                     <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
                         I'm Ismail Hasan
-                        <br />
-                        <span className="text-3xl sm:text-4xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
-                            MERN Stack Developer
-                        </span>
                     </h1>
+
+                    <div className='text-3xl sm:text-4xl md:text-5xlfont-bold'>
+                        <Typewriter
+                            words={['Web Developer', 'MERN Stack Developer', 'Web Designer']}
+                            loop={5}
+                            cursor
+                            cursorStyle='_'
+                            typeSpeed={70}
+                            deleteSpeed={50}
+                            delaySpeed={1000}
+                        />
+                    </div>
+
 
                     <p className="text-base sm:text-lg text-gray-300 max-w-md mx-auto md:mx-0">
                         I'm a UI/UX and Frontend Developer passionate about crafting user-friendly and visually appealing
